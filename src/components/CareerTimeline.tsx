@@ -63,17 +63,19 @@ const CareerTimeline = () => {
       company: "Homelab",
       role: "Proxmox Server: Security & Networking Virtualization",
       description: `Hardware Specs:
-* CPU: Intel i7 (14th 14700k, 20 cores for robust VM performance)
-* RAM: 128GB DDR4/DDR5 (ECC preferred for stability in virtualization)
-* Storage: 10TB HDD 1x4TB (for NAS) + 1x2TB SSD (for ISO images) + 1X4TBB NVMe SSD (for Proxmox OS and VM storage cache)
-* External storage: 12TB for Backup
-* Networking: Dual 1GbE NICs (upgradable to 10GbE for high-speed networking VMs) + PCIe Wi-Fi card (for wireless testing)
-* PSU: 850W 80+ Gold for efficiency and expansion
+
+CPU: Intel i7 (14th 14700k, 20 cores for robust VM performance)
+RAM: 128GB DDR5
+Storage: 10TB HDD 1x4TB (for NAS) + 1x2TB SSD (for ISO images) + 1X4TBB NVMe SSD (for Proxmox OS and VM storage cache)
+External storage: 12TB for Backup
+Networking: Dual 1GbE NICs (upgradable to 10GbE for high-speed networking VMs) + PCIe Wi-Fi card (for wireless testing)
+PSU: 850W 80+ Gold for efficiency and expansion
 
 Proxmox VE Configuration:
-* Hypervisor: Proxmox VE (latest, 8.3.1) for managing VMs and containers
-* Storage Setup: ZFS on HDDs for data integrity, SSD for fast VM/container storage
-* Networking: VLANs configured for isolated security and networking labs (e.g., DMZ, LAN, IoT, Guest). Virtual bridges for VM-to-VM communication.`,
+
+Hypervisor: Proxmox VE (latest, 8.3.1) for managing VMs and containers
+Storage Setup: NVMe SSD for fast VM/container storage
+Networking: VLANs and pfSense firewall configured for isolated security and networking labs (e.g., DMZ, SEC infected VMs, LAN).`,
       icon: Cpu,
       color: "orange",
       image: "https://images.banszky.men/cv/01Homelab.jpeg"
