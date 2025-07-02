@@ -53,7 +53,7 @@ const CareerTimeline = () => {
     },
     {
       company: "Cloudbasesolutions",
-      role: "Infrastructure Consultant",
+      role: "Network and Cloud Engineer",
       description: "Helped relocate and rebuild a small data center. Handled pfSense BGP routing, Arista MLAG switching, and Proxmox-based server infrastructure across 3 racks.",
       icon: Building2,
       color: "orange",
@@ -69,7 +69,7 @@ RAM: 128GB DDR5
 Storage: 10TB HDD 1x4TB (for NAS) + 1x2TB SSD (for ISO images) + 1X4TBB NVMe SSD (for Proxmox OS and VM storage cache)
 External storage: 12TB for Backup
 Networking: Dual 1GbE NICs (upgradable to 10GbE for high-speed networking VMs) + PCIe Wi-Fi card (for wireless testing)
-PSU: 850W 80+ Gold for efficiency and expansion
+PSU: 850W Gold for efficiency and expansion
 
 Proxmox VE Configuration:
 
