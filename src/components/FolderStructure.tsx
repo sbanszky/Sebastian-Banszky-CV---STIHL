@@ -8,7 +8,7 @@ const FolderStructure = () => {
     {
       name: "Polytechnic University",
       description: "Cisco CCNA Instructor role",
-      photos: Array.from({ length: 3 }, (_, i) => `document${i + 1}.jpg`)
+      photos: Array.from({ length: 1 }, (_, i) => `document${i + 1}.jpg`)
     },
     {
       name: "AtoS",
