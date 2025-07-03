@@ -33,7 +33,7 @@ const FolderStructure = () => {
     {
       name: "Cloudbase",
       description: "Infrastructure Consultant",
-      photos: Array.from({ length: 4 }, (_, i) => `photo${i + 1}.jpg`)
+      photos: Array.from({ length: 4 }, (_, i) => `document${i + 1}.jpg`)
     }
   ];
 
@@ -44,7 +44,7 @@ const FolderStructure = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
           Courses
         </h2>
 
@@ -52,19 +52,19 @@ const FolderStructure = () => {
           {jobFolders.map((folder, index) => (
             <div
               key={index}
-              className="bg-gray-900/40 backdrop-blur-lg rounded-lg border border-gray-700 hover:border-orange-500 transition-all duration-300"
+              className="bg-gray-900/40 backdrop-blur-lg rounded-lg border border-gray-700 hover:border-blue-500 transition-all duration-300"
             >
               <div
                 className="flex items-center p-6 cursor-pointer"
                 onClick={() => toggleFolder(folder.name)}
               >
-                <Folder className="w-6 h-6 text-orange-500 mr-4" />
+                <Folder className="w-6 h-6 text-blue-500 mr-4" />
                 <div className="flex-grow">
-                  <h3 className="text-xl font-semibold text-orange-400">{folder.name}</h3>
+                  <h3 className="text-xl font-semibold text-blue-400">{folder.name}</h3>
                   <p className="text-gray-400 text-sm">{folder.description}</p>
                 </div>
                 <span className="text-gray-500 text-sm">
-                  {folder.photos.length} photos
+                  {folder.photos.length} documents
                 </span>
               </div>
 
@@ -74,10 +74,10 @@ const FolderStructure = () => {
                     {folder.photos.map((photo, photoIndex) => (
                       <div
                         key={photoIndex}
-                        className="bg-gray-800/50 rounded-lg p-3 border border-gray-600 hover:border-orange-500 transition-colors"
+                        className="bg-gray-800/50 rounded-lg p-3 border border-gray-600 hover:border-blue-500 transition-colors"
                       >
                         <div className="flex flex-col items-center">
-                          <Image className="w-6 h-6 text-orange-500 mb-2" />
+                          <Image className="w-6 h-6 text-blue-500 mb-2" />
                           <span className="text-gray-400 text-xs text-center">{photo}</span>
                         </div>
                       </div>
@@ -92,7 +92,7 @@ const FolderStructure = () => {
         <div className="mt-12 text-center">
           <div className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-6 border border-gray-700">
             <p className="text-gray-300">
-              <span className="text-orange-400 font-semibold">Total:</span> {jobFolders.reduce((acc, folder) => acc + folder.photos.length, 0)} courses organized across {jobFolders.length} career milestones
+              <span className="text-blue-400 font-semibold">Total:</span> {jobFolders.reduce((acc, folder) => acc + folder.photos.length, 0)} courses organized across {jobFolders.length} career milestones
             </p>
           </div>
         </div>

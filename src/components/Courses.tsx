@@ -40,7 +40,7 @@ const Courses = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
           Training & Expertise
         </h2>
 
@@ -48,14 +48,14 @@ const Courses = () => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-8 border border-gray-700 hover:border-orange-500 transition-all duration-300"
+              className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-orange-500/10 rounded-full border border-orange-500">
-                  <course.icon className="w-6 h-6 text-orange-500" />
+                <div className="p-3 bg-blue-500/10 rounded-full border border-blue-500">
+                  <course.icon className="w-6 h-6 text-blue-500" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-bold text-orange-500">{course.title}</h3>
+                  <h3 className="text-xl font-bold text-blue-500">{course.title}</h3>
                   <p className="text-gray-400 text-sm">{course.institution}</p>
                 </div>
               </div>
@@ -63,13 +63,13 @@ const Courses = () => {
               <p className="text-gray-300 mb-4 leading-relaxed">{course.description}</p>
 
               <div className="flex items-center justify-between text-sm">
-                <span className="text-orange-400 font-semibold">{course.duration}</span>
-                <Award className="w-4 h-4 text-orange-500" />
+                <span className="text-blue-400 font-semibold">{course.duration}</span>
+                <Award className="w-4 h-4 text-blue-500" />
               </div>
 
               <div className="mt-4 p-3 bg-gray-800/50 rounded-lg border border-gray-600">
                 <p className="text-gray-300 text-sm">
-                  <span className="text-orange-400 font-semibold">Achievement:</span> {course.achievement}
+                  <span className="text-blue-400 font-semibold">Achievement:</span> {course.achievement}
                 </p>
               </div>
             </div>
@@ -79,12 +79,12 @@ const Courses = () => {
         <div className="mt-16 text-center">
           <div className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-8 border border-gray-700">
             <div className="flex justify-center mb-4">
-              <BookOpen className="w-8 h-8 text-orange-500" />
+              <BookOpen className="w-8 h-8 text-blue-500" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-orange-500">Continuous Learning</h3>
+            <h3 className="text-2xl font-bold mb-4 text-blue-500">Continuous Learning</h3>
             <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              My approach to professional development combines <span className="text-orange-400 font-semibold">formal training</span> with 
-              <span className="text-orange-500 font-semibold"> hands-on experience</span>. I believe in learning by doing and 
+              My approach to professional development combines <span className="text-blue-400 font-semibold">formal training</span> with 
+              <span className="text-blue-500 font-semibold"> hands-on experience</span>. I believe in learning by doing and 
               sharing knowledge with others.
             </p>
           </div>

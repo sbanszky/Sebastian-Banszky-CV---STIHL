@@ -9,7 +9,7 @@ const CareerTimeline = () => {
       role: "Network Engineer",
       description: "Started my career at this pan-European telecom provider, coordinating backbone upgrades alongside the NOC in Bucharest. Handled Cisco 7600 series routers and redesigned the access layer for Timișoara.",
       icon: Building2,
-      color: "orange",
+      color: "blue",
       image: null
     },
     {
@@ -17,7 +17,7 @@ const CareerTimeline = () => {
       role: "Cisco CCNA Instructor",
       description: "Taught Cisco CCNA while working at UPC. After a year and a half, awarded Cisco's Expert Instructor Excellence Badge for maintaining an 80%+ student pass rate.",
       icon: GraduationCap,
-      color: "orange",
+      color: "blue",
       image: "https://images.banszky.men/cv/CCNA-expert-instructor.jpg"
     },
     {
@@ -25,7 +25,7 @@ const CareerTimeline = () => {
       role: "Security Engineer",
       description: "Worked mainly in the security domain with Checkpoint, Palo Alto, and Cisco ASA, handling upgrades and firewall rule base management. Participated in on-site data center visits in Germany and Belgium.",
       icon: Shield,
-      color: "orange",
+      color: "blue",
       image: null
     },
     {
@@ -33,7 +33,7 @@ const CareerTimeline = () => {
       role: "Cloud Integration Engineer",
       description: "Had two roles: managing a large African IP backbone with UK-based data centers, and as a Cloud Integration Engineer. Trained in Espoo, Finland, then led full on-site deployment in Chișinău, Moldova.",
       icon: Cloud,
-      color: "orange",
+      color: "blue",
       image: [
         "https://images.banszky.men/cv/01NokiaCNF-test.jpeg",
         "https://images.banszky.men/cv/02NokiaCNA-test.jpeg"
@@ -44,7 +44,7 @@ const CareerTimeline = () => {
       role: "Global Data Center Engineer",
       description: "Worked for almost 4 years in a global team managing 7 data centers under a 'follow the sun' model. Extensive work with Vyatta, pfSense, Cisco ASA, and migrated Core DC ASA firewalls to Cisco Firepower.",
       icon: Server,
-      color: "orange",
+      color: "blue",
       image: [
         "https://images.banszky.men/cv/01IBM.jpeg",
         "https://images.banszky.men/cv/02IBM.jpeg",
@@ -56,7 +56,7 @@ const CareerTimeline = () => {
       role: "Network and Cloud Engineer",
       description: "Helped relocate and rebuild a small data center. Handled pfSense BGP routing, Arista MLAG switching, and Proxmox-based server infrastructure across 3 racks.",
       icon: Building2,
-      color: "orange",
+      color: "blue",
       image: null
     },
     {
@@ -77,19 +77,19 @@ Hypervisor: Proxmox VE (latest, 8.3.1) for managing VMs and containers
 Storage Setup: NVMe SSD for fast VM/container storage
 Networking: VLANs and pfSense firewall configured for isolated security and networking labs (e.g., DMZ, SEC infected VMs, LAN).`,
       icon: Cpu,
-      color: "orange",
+      color: "blue",
       image: "https://images.banszky.men/cv/01Homelab.jpeg"
     }
   ];
 
   const getColorClasses = (color: string) => {
-    return "text-orange-500 border-orange-500 bg-orange-500/10";
+    return "text-blue-500 border-blue-500 bg-blue-500/10";
   };
 
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
           Career Journey
         </h2>
 
@@ -104,7 +104,7 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
               
               <div className="flex-grow">
                 <div className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-8 border border-gray-700 hover:border-gray-600 transition-all duration-300">
-                  <h3 className="text-2xl font-bold mb-2 text-orange-500">
+                  <h3 className="text-2xl font-bold mb-2 text-blue-500">
                     {exp.company}
                   </h3>
                   <h4 className="text-xl text-gray-300 mb-4">{exp.role}</h4>
@@ -167,10 +167,10 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
 
         <div className="mt-16 text-center">
           <div className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-8 border border-gray-700">
-            <h3 className="text-2xl font-bold mb-4 text-orange-500">Summary</h3>
+            <h3 className="text-2xl font-bold mb-4 text-blue-500">Summary</h3>
             <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-lg">
-              I bring solid experience in <span className="text-orange-400 font-semibold">routing, switching, firewalls, data centers, and cloud integration</span>, 
-              with a strong focus on <span className="text-orange-500 font-semibold">doing things properly and efficiently</span>.
+              I bring solid experience in <span className="text-blue-400 font-semibold">routing, switching, firewalls, data centers, and cloud integration</span>, 
+              with a strong focus on <span className="text-blue-500 font-semibold">doing things properly and efficiently</span>.
             </p>
           </div>
         </div>
