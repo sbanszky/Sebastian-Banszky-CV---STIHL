@@ -6,11 +6,6 @@ const FolderStructure = () => {
   
   const jobFolders = [
     {
-      name: "UPC",
-      description: "Pan-European telecom provider experience",
-      photos: Array.from({ length: 5 }, (_, i) => `document${i + 1}.jpg`)
-    },
-    {
       name: "Polytechnic University",
       description: "Cisco CCNA Instructor role",
       photos: Array.from({ length: 3 }, (_, i) => `document${i + 1}.jpg`)
