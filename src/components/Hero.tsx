@@ -37,11 +37,7 @@ const Hero = () => {
           <p className="text-lg text-gray-200 leading-relaxed max-w-3xl mx-auto">
             I'm a <span className="text-blue-500 font-semibold">"hands-on" network engineer</span> with over a decade of experience across 
             <span className="text-blue-400 font-semibold"> service providers, enterprise, and data center environments</span>. 
-            I prefer action over words — an introvert who speaks less and delivers more. My strength lies in building, upgrading, and transforming network infrastructures at scale.
-
-I’ve led backbone upgrades, migrated architectures from North-South to East-West (Spine-Leaf), deployed cloud-native platforms like OpenStack, and handled multivendor security stacks across Cisco, Juniper, Check Point, Palo Alto, Arista, Vyatta, and pfSense. Whether it's fine-tuning routing, segmenting VLANs, enforcing QoS, or standing up infrastructure in a new data center — I work end-to-end, from design to CLI.
-
-Equally comfortable coordinating with NOCs, senior architects, and on-site or remote hands, I take pride in doing things right the first time — practically, efficiently, and thoroughly.
+            I prefer action over words — an introvert who speaks less and delivers more. 
           </p>
         </div>
 
