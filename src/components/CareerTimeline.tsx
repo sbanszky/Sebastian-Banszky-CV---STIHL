@@ -232,7 +232,7 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
             <h3 className="text-2xl font-bold mb-4 text-blue-500">Summary</h3>
             <p className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-lg">
               I bring solid experience in <span className="text-blue-400 font-semibold">routing, switching, firewalls, data centers, and cloud integration</span>, 
-              with a strong focus on <span className="text-blue-500 font-semibold">doing things properly and efficiently.</span>,<span className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-lg"> My strength lies in building, upgrading, and transforming network infrastructures at scale.
+              with a strong focus on <span className="text-blue-500 font-semibold">doing things properly and efficiently.</span> <span className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-lg"> My strength lies in building, upgrading, and transforming network infrastructures at scale.
 
 I've led backbone upgrades, migrated architectures from North-South to East-West (Spine-Leaf), deployed cloud-native platforms like OpenStack, and handled multivendor security stacks across Cisco, Juniper, Check Point, Palo Alto, Arista, Vyatta, and pfSense. Whether it\'s fine-tuning routing, segmenting VLANs, enforcing QoS, or standing up infrastructure in a new data center — I work end-to-end, from design to CLI.
 
