@@ -80,7 +80,8 @@ In the second phase of my time there, I was involved in a strategic project to m
         "https://images.banszky.men/cv/01IBM.jpeg",
         "https://images.banszky.men/cv/02IBM.jpeg",
         "https://images.banszky.men/cv/07IBM.jpeg",
-        "https://images.banszky.men/cv/04IBM.jpeg"
+        "https://images.banszky.men/cv/04IBM.jpeg",
+        "https://images.banszky.men/cv/05IBM.jpeg"
       ]
     },
     {
