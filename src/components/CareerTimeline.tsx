@@ -108,9 +108,7 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
       color: "blue",
       image: [
         "https://images.banszky.men/cv/01Homelab.jpeg",
-        "https://images.banszky.men/cv/images_banszky_he_DDNS.jpeg",
-        "https://images.banszky.men/cv/birou.jpeg",
-        "https://images.banszky.men/cv/proiector.jpeg"
+        "https://images.banszky.men/cv/images_banszky_he_DDNS.jpeg"
       ]
     }
   ];
