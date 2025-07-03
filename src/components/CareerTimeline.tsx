@@ -32,7 +32,15 @@ In the second phase of my time there, I was involved in a strategic project to m
       description: "Worked mainly in the security domain with Checkpoint, Palo Alto, and Cisco ASA, handling upgrades and firewall rule base management. Participated in on-site data center visits in Germany and Belgium.",
       icon: Shield,
       color: "blue",
-      image: null
+      image: [
+        "https://images.banszky.men/cv/01Atos.jpeg",
+        "https://images.banszky.men/cv/02Atos.jpeg",
+        "https://images.banszky.men/cv/03Atos.jpeg",
+        "https://images.banszky.men/cv/04Atos.jpeg",
+        "https://images.banszky.men/cv/05Atos.jpeg",
+        "https://images.banszky.men/cv/06Atos.jpeg",
+        "https://images.banszky.men/cv/07Atos.jpeg",
+      ]
     },
     {
       company: "Nokia",
