@@ -1,8 +1,12 @@
 import { Building2, GraduationCap, Cloud, Shield, Server, Cpu } from "lucide-react";
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { useState } from "react";
 
 const CareerTimeline = () => {
+  const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
+
   const experiences = [
     {
       company: "UPC",
@@ -13,7 +17,7 @@ In the second phase of my time there, I was involved in a strategic project to m
 
 • Higher throughput and increased scalability
 • Better horizontal traffic flow across the fabric
-• Migration from bulky Cisco XENPAK optics to high-density SFP+ modules, significantly increasing port-per-slot capacity and reducing operational overhead`, 
+• Migration from bulky Cisco XENPAK optics to high-density SFP+ modules, significantly increasing port-per-slot capacity and reducing operational overhead`,
       icon: Building2,
       color: "blue",
       image: "https://images.banszky.men/cv/traditiona-new-arch.jpeg"
@@ -119,6 +123,16 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
     return "text-blue-500 border-blue-500 bg-blue-500/10";
   };
 
+  const openImageDialog = (experienceIndex: number, imageIndex: number) => {
+    setSelectedExperience(experienceIndex);
+    setSelectedImageIndex(imageIndex);
+  };
+
+  const closeImageDialog = () => {
+    setSelectedExperience(null);
+    setSelectedImageIndex(0);
+  };
+
   return (
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -146,49 +160,19 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
                   {exp.image && (
                     <div className="flex flex-wrap gap-4">
                       {(Array.isArray(exp.image) ? exp.image : [exp.image]).map((img, imgIndex) => (
-                        <Dialog key={imgIndex}>
-                          <DialogTrigger>
-                            <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-600 cursor-pointer hover:border-gray-500 transition-colors">
-                              <div className="w-32 h-24 rounded-lg overflow-hidden">
-                                <img
-                                  src={img}
-                                  alt="Experience Thumbnail"
-                                  className="w-full h-full object-cover"
-                                />
-                              </div>
-                            </div>
-                          </DialogTrigger>
-                          <DialogContent style={{ maxWidth: '90vw', maxHeight: '90vh' }}>
-                            <DialogHeader>
-                              <DialogTitle>Image Viewer</DialogTitle>
-                            </DialogHeader>
-                            <div className="w-full h-full flex items-center justify-center">
-                              {Array.isArray(exp.image) ? (
-                                <Carousel className="w-full max-w-4xl">
-                                  <CarouselContent>
-                                    {exp.image.map((image, idx) => (
-                                      <CarouselItem key={idx}>
-                                        <img 
-                                          src={image} 
-                                          alt={`Experience Image ${idx + 1}`} 
-                                          className="w-full h-auto max-h-[80vh] object-contain"
-                                        />
-                                      </CarouselItem>
-                                    ))}
-                                  </CarouselContent>
-                                  <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-                                  <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
-                                </Carousel>
-                              ) : (
-                                <img 
-                                  src={img} 
-                                  alt="Experience Image" 
-                                  className="w-full h-auto max-h-[80vh] object-contain"
-                                />
-                              )}
-                            </div>
-                          </DialogContent>
-                        </Dialog>
+                        <div
+                          key={imgIndex}
+                          className="bg-gray-800/50 rounded-lg p-4 border border-gray-600 cursor-pointer hover:border-gray-500 transition-colors"
+                          onClick={() => openImageDialog(index, imgIndex)}
+                        >
+                          <div className="w-32 h-24 rounded-lg overflow-hidden">
+                            <img
+                              src={img}
+                              alt={`${exp.company} Image ${imgIndex + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
                       ))}
                     </div>
                   )}
@@ -198,6 +182,51 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
           ))}
         </div>
 
+        {/* Image Dialog */}
+        {selectedExperience !== null && (
+          <Dialog open={true} onOpenChange={closeImageDialog}>
+            <DialogContent style={{ maxWidth: '90vw', maxHeight: '90vh' }}>
+              <DialogHeader>
+                <DialogTitle>{experiences[selectedExperience].company} - Images</DialogTitle>
+              </DialogHeader>
+              <div className="w-full h-full flex items-center justify-center">
+                {(() => {
+                  const exp = experiences[selectedExperience];
+                  const images = Array.isArray(exp.image) ? exp.image : [exp.image];
+                  
+                  if (images.length === 1) {
+                    return (
+                      <img 
+                        src={images[0]} 
+                        alt={`${exp.company} Image`} 
+                        className="w-full h-auto max-h-[80vh] object-contain"
+                      />
+                    );
+                  }
+                  
+                  return (
+                    <Carousel className="w-full max-w-4xl" opts={{ startIndex: selectedImageIndex }}>
+                      <CarouselContent>
+                        {images.map((image, idx) => (
+                          <CarouselItem key={idx}>
+                            <img 
+                              src={image} 
+                              alt={`${exp.company} Image ${idx + 1}`} 
+                              className="w-full h-auto max-h-[80vh] object-contain"
+                            />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+                      <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+                    </Carousel>
+                  );
+                })()}
+              </div>
+            </DialogContent>
+          </Dialog>
+        )}
+
         <div className="mt-16 text-center">
           <div className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-8 border border-gray-700">
             <h3 className="text-2xl font-bold mb-4 text-blue-500">Summary</h3>
@@ -205,7 +234,7 @@ Networking: VLANs and pfSense firewall configured for isolated security and netw
               I bring solid experience in <span className="text-blue-400 font-semibold">routing, switching, firewalls, data centers, and cloud integration</span>, 
               with a strong focus on <span className="text-blue-500 font-semibold">doing things properly and efficiently.</span>,<span className="text-gray-300 leading-relaxed max-w-4xl mx-auto text-lg"> My strength lies in building, upgrading, and transforming network infrastructures at scale.
 
-I’ve led backbone upgrades, migrated architectures from North-South to East-West (Spine-Leaf), deployed cloud-native platforms like OpenStack, and handled multivendor security stacks across Cisco, Juniper, Check Point, Palo Alto, Arista, Vyatta, and pfSense. Whether it's fine-tuning routing, segmenting VLANs, enforcing QoS, or standing up infrastructure in a new data center — I work end-to-end, from design to CLI.
+I've led backbone upgrades, migrated architectures from North-South to East-West (Spine-Leaf), deployed cloud-native platforms like OpenStack, and handled multivendor security stacks across Cisco, Juniper, Check Point, Palo Alto, Arista, Vyatta, and pfSense. Whether it's fine-tuning routing, segmenting VLANs, enforcing QoS, or standing up infrastructure in a new data center — I work end-to-end, from design to CLI.
 
 Equally comfortable coordinating with NOCs, senior architects, and on-site or remote hands, I take pride in doing things right the first time — practically, efficiently, and thoroughly.</span>.
             </p>
