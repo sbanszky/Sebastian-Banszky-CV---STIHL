@@ -16,7 +16,7 @@ In the second phase of my time there, I was involved in a strategic project to m
 • Migration from bulky Cisco XENPAK optics to high-density SFP+ modules, significantly increasing port-per-slot capacity and reducing operational overhead`,
       icon: Building2,
       color: "blue",
-      image: null
+      image: "https://images.banszky.men/cv/traditiona-new-arch.jpeg"
     },
     {
       company: "Polytechnic University",
