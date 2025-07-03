@@ -36,7 +36,7 @@ In the second phase of my time there, I was involved in a strategic project to m
     },
     {
       company: "Nokia",
-      role: "Cloud Integration Engineer",
+      role: "Newtwork engineer followed by Cloud Integration Engineer",
       description: "Had two roles: managing a large African IP backbone with UK-based data centers, and as a Cloud Integration Engineer. Trained in Espoo, Finland, then led full on-site deployment in Chișinău, Moldova.",
       icon: Cloud,
       color: "blue",
