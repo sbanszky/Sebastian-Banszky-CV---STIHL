@@ -7,7 +7,11 @@ const CareerTimeline = () => {
     {
       company: "UPC",
       role: "Network Engineer",
-      description: "Started my career at this pan-European telecom provider, coordinating backbone upgrades alongside the NOC in Bucharest. Handled Cisco 7600 series routers and redesigned the access layer for Timișoara.",
+      description: "Started my career at this pan-European telecom provider, coordinating backbone upgrades alongside the NOC in Bucharest. Handled Cisco 7600 series routers and redesigned the access layer for Timișoara.
+In the second phase of my time there, I was involved in a strategic project to modernize the network architecture—transitioning from a traditional North-South Core-Distribution-Access design to an East-West Spine-Leaf model. This transformation replaced legacy Cisco 7609 (core) and 7604 (distribution) routers with Juniper MX440 platforms, enabling:
+    Higher throughput and increased scalability
+    Better horizontal traffic flow across the fabric
+    Migration from bulky Cisco XENPAK optics to high-density SFP+ modules, significantly increasing port-per-slot capacity and reducing operational overhead",
       icon: Building2,
       color: "blue",
       image: null
