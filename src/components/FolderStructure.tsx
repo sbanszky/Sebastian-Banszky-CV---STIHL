@@ -8,27 +8,27 @@ const FolderStructure = () => {
     {
       name: "UPC",
       description: "Pan-European telecom provider experience",
-      photos: Array.from({ length: 5 }, (_, i) => `photo${i + 1}.jpg`)
+      photos: Array.from({ length: 5 }, (_, i) => `document${i + 1}.jpg`)
     },
     {
       name: "Polytechnic University",
       description: "Cisco CCNA Instructor role",
-      photos: Array.from({ length: 3 }, (_, i) => `photo${i + 1}.jpg`)
+      photos: Array.from({ length: 3 }, (_, i) => `document${i + 1}.jpg`)
     },
     {
       name: "AtoS",
       description: "Security domain work",
-      photos: Array.from({ length: 4 }, (_, i) => `photo${i + 1}.jpg`)
+      photos: Array.from({ length: 4 }, (_, i) => `document${i + 1}.jpg`)
     },
     {
       name: "Nokia",
       description: "Cloud Integration Engineer",
-      photos: Array.from({ length: 6 }, (_, i) => `photo${i + 1}.jpg`)
+      photos: Array.from({ length: 6 }, (_, i) => `document${i + 1}.jpg`)
     },
     {
       name: "IBM",
       description: "Global Data Center Engineer",
-      photos: Array.from({ length: 8 }, (_, i) => `photo${i + 1}.jpg`)
+      photos: Array.from({ length: 8 }, (_, i) => `document${i + 1}.jpg`)
     },
     {
       name: "Cloudbase",
