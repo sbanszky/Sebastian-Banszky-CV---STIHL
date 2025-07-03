@@ -42,7 +42,20 @@ In the second phase of my time there, I was involved in a strategic project to m
       color: "blue",
       image: [
         "https://images.banszky.men/cv/01NokiaCNF-test.jpeg",
-        "https://images.banszky.men/cv/02NokiaCNA-test.jpeg"
+        "https://images.banszky.men/cv/02NokiaCNA-test.jpeg",
+        "https://images.banszky.men/cv/01Alcatel.jpeg",
+        "https://images.banszky.men/cv/02Alcatel.jpeg",
+        "https://images.banszky.men/cv/03Alcatel.jpeg",
+        "https://images.banszky.men/cv/04Alcatel.jpeg",
+        "https://images.banszky.men/cv/05Alcatel.jpeg",
+        "https://images.banszky.men/cv/06Alcatel.jpeg",
+        "https://images.banszky.men/cv/07Alcatel.jpeg",
+        "https://images.banszky.men/cv/08Alcatel.jpeg",
+        "https://images.banszky.men/cv/09Alcatel.jpeg",
+        "https://images.banszky.men/cv/010Alcatel.jpeg",
+        "https://images.banszky.men/cv/011Alcatel.jpeg",
+        "https://images.banszky.men/cv/012Alcatel.jpeg",
+        "https://images.banszky.men/cv/013Alcatel.jpeg"
       ]
     },
     {
