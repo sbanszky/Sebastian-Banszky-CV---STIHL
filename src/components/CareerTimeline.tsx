@@ -99,7 +99,7 @@ In the second phase of my time there, I was involved in a strategic project to m
 
 CPU: Intel i7 (14th 14700k, 20 cores for robust VM performance)
 RAM: 128GB DDR5
-Storage: 10TB HDD 1x4TB (for NAS) + 1x2TB SSD (for ISO images) + 1X4TBB NVMe SSD (for Proxmox OS and VM storage cache)
+Storage: 10TB HDD 1x4TB (for NAS) + 1x2TB SSD (for ISO images) + 1X4TB NVMe SSD (for Proxmox OS and VM storage cache)
 External storage: 12TB for Backup
 Networking: Dual 1GbE NICs (upgradable to 10GbE for high-speed networking VMs) + PCIe Wi-Fi card (for wireless testing)
 PSU: 850W Gold for efficiency and expansion
