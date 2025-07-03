@@ -47,7 +47,7 @@ In the second phase of my time there, I was involved in a strategic project to m
     },
     {
       company: "IBM",
-      role: "Global Data Center Engineer",
+      role: "Global Data Center Networking Engineer",
       description: "Worked for almost 4 years in a global team managing 7 data centers under a 'follow the sun' model. Extensive work with Vyatta, pfSense, Cisco ASA, and migrated Core DC ASA firewalls to Cisco Firepower.",
       icon: Server,
       color: "blue",
