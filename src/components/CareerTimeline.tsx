@@ -106,7 +106,10 @@ Storage Setup: NVMe SSD for fast VM/container storage
 Networking: VLANs and pfSense firewall configured for isolated security and networking labs (e.g., DMZ, SEC infected VMs, LAN).`,
       icon: Cpu,
       color: "blue",
-      image: "https://images.banszky.men/cv/01Homelab.jpeg"
+      image: [
+        "https://images.banszky.men/cv/01Homelab.jpeg",
+        "https://images.banszky.men/cv/images_banszky_he_DDNS.jpeg"
+      ]
     }
   ];
 
