@@ -27,7 +27,7 @@ const FolderStructure = () => {
     },
     {
       name: "Cloudbase",
-      description: "Infrastructure Consultant",
+      description: "Network and Clud Engineer",
       photos: Array.from({ length: 4 }, (_, i) => `document${i + 1}.jpg`)
     }
   ];
