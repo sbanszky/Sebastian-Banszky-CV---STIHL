@@ -7,17 +7,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       {/* Back button - top right */}
-      <div className="fixed top-6 right-6 z-50">
-        <BackButton />
-      </div>
-      
-      {/* Back button - middle right */}
-      <div className="fixed top-1/2 right-6 transform -translate-y-1/2 z-50">
+      <div className="fixed top-6 right-8 z-50">
         <BackButton />
       </div>
       
       {/* Back button - bottom right */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-6 right-8 z-50">
         <BackButton />
       </div>
       
